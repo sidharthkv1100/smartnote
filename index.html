@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+  <header>
+    <h1>📝 Smart Notes</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search notes..." />
+      <select id="sortSelect">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+      </select>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <section class="note-input">
+    <textarea id="noteText" placeholder="Write your note..."></textarea>
+    <button onclick="addNote()">Add Note</button>
+  </section>
+
+  <section id="notesContainer" class="notes"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
